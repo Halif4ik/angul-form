@@ -1,5 +1,21 @@
 <div class="py-4 px-6 border rounder flex items-center flex-col mb-2 justify-around">
-  <img [src]="product.image" [alt]="product.description" class="mb-2 w-1/6">
+  <!--<img [src]="product.image" [alt]="product.description" class="mb-2 w-1/6">
   <h2 class="mb-2 text-center text-lg"> {{product.title}}</h2>
   <p class="mb-2 text-center text-sm font-bold"> Price: {{ product.price }}</p>
+
+  <button (click)="details = !details" class="bg-blue-500 text-white px-4 py-2 rounded"
+          [ngClass]="{'bg-blue-700': !details, 'bg-yellow-400':details }">
+  {{details? 'Hide': 'Show'}} Details
+  </button>
+  <div *ngIf="details">
+    <p>{{product.description}}</p>
+    <p>Rate:{{product.rating.rate | number: '1.2-4' }}</p>
+  </div>-->
+
+  <h2>{{quiz.description}}</h2>
+  <h2>{{quiz.frequencyInDay}}</h2>
+  <h2>{{quiz.id}}</h2>
+
+
 </div>
+

@@ -10,3 +10,9 @@ export interface IProduct {
     count: number;
   }
 }
+
+export interface Quiz {
+  id: number;
+  description: string;
+  frequencyInDay: number;
+}

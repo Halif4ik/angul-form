@@ -1,15 +1,15 @@
-import { Component,Input } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import {IProduct} from "../../data/interface";
-import { CurrencyPipe } from '@angular/common'; // Import CurrencyPipe
+import {Component, Input} from '@angular/core';
+import {IProduct, Quiz} from "../../data/interface";
 
 @Component({
   selector: 'app-product',
-  standalone: true,
-  imports: [RouterOutlet],
+  /*standalone: true,
+  imports: [RouterOutlet],*/
   templateUrl: './product.component.html',
 })
 
 export class ProductComponent {
   @Input() product: IProduct;
+  @Input() quiz:Quiz;
+  protected details = false;
 }

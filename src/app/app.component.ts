@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import {ProductComponent} from "./components/product/product.component";
 import {products as data} from "./data/products";
 import {IProduct} from "./data/interface";
+import { CurrencyPipe } from '@angular/common'; // Import CurrencyPipe
 
 @Component({
   selector: 'app-root',
